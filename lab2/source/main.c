@@ -15,12 +15,13 @@
 int main(void) {
 DDRA = 0x00; PORTA = 0xFF;
 DDRB = 0xFF; PORTB = 0x00;
-
-unsigned char tempB= 0x00;
-    while (1) {
-	tempB=0x00;
-	tempB=~PINA;
-	PORTB = tempB;	
-    }
-    return 1;
+unsigned char tmpB = 0x00;
+    while (1){
+if(PORTA0==1&&PORTA1==0){
+	PORTB0=1;
 }
+else{
+	PORB0=0;
+}	
+    }
+    return 1;}
